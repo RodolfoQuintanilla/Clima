@@ -1,8 +1,9 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 
 const Header = ({ titulo }) => {
 
-    //const [state, setstate] = useState(initialState);
+
 
     return (
 
@@ -17,5 +18,9 @@ const Header = ({ titulo }) => {
     );
 
 };
+
+Header.propTypes = {
+    titulo: PropTypes.string.isRequired
+}
 
 export default Header;
